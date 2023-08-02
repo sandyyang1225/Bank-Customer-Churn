@@ -12,5 +12,5 @@
       FROM payment AS p
       INNER JOIN customer AS c
       ON p.customer_id = c.customer_id
-      WHERE active is TRUE
+      WHERE active = 1
       ORDER BY amount DESC;
